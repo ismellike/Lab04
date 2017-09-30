@@ -1,0 +1,36 @@
+<html>
+    <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type ="text/javascript" src="formChecker.js"></script>
+	<title>Exercise 3</title>
+    </head>
+	<body>
+		<h1>The Fish Store</h1><br>
+		<form id="form" onsubmit = "return check()" action = "customerBackend.php" method="post">
+		<table align="center">
+			<tr>
+				<th>Spotted Puffer $20</th>
+				<th>Goldfish $1</th>
+				<th>Angelfish $5</th>
+			</tr>
+			<tr>
+				<td><img src="puffer.jpg"></td>
+				<td><img src="goldfish.jpg"></td>
+				<td><img src="angelfish.jpg"></td>
+			</tr>
+			<tr>
+				<td>Quantity:<input class = "number" type="number" id="pufferCount" min="0" max= "100" value = "0"></td>
+				<td>Quantity:<input class = "number" type="number" id ="goldfishCount" min="0" max= "100" value="0"></td>
+				<td>Quantity:<input class = "number" type="number" id ="angelfishCount" min="0" max= "100" value="0"></td>
+			</tr>
+		</table><br>
+		<h3>Shipping:</h3>
+		<p><input type="radio" name="shipping" value="0"> Free 7 day</p>
+		<p><input type="radio" name="shipping" value="50"> $50 overnight</p>
+		<p><input type="radio" name="shipping" value="5"> $5 3 day</p>
+		<p>Enter a username: <input type="text" id="user"></p>
+		<p>Enter a password: <input type ="password" id="pass"></p>
+		<p><button type ="button" onclick="onClick()">Reset</button> <input type="submit"> </p>
+		</form>
+	</body>
+</html> 
