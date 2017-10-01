@@ -16,12 +16,26 @@ function check()
 		alert("Enter a value for all types of fish.");
 		return false;
 	}
+	if(pufferCount.value+goldfishCount.value+angelfishCount.value <= 0)
+	{
+		alert("Select at least 1 fish to check out");
+		return false;
+	}
 	if(!radioChecked())
 	{
 		alert("Select a shipping option.");
 		return false;
 	}
-	//check for @domain.com for user
+	if(user.value.indexOf(".com") == -1 || user.value.indexOf("@")==-1)
+	{
+		alert("Give a username in the form name@domain.com");
+		return false;
+	}
+	if(pass.value.length <= 0)
+	{
+		alert("Enter a password.");
+		return false;
+	}
 	return true;
 }
 

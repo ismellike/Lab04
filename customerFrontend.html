@@ -19,17 +19,17 @@
 				<td><img src="angelfish.jpg"></td>
 			</tr>
 			<tr>
-				<td>Quantity:<input class = "number" type="number" id="pufferCount" min="0" max= "100" value = "0"></td>
-				<td>Quantity:<input class = "number" type="number" id ="goldfishCount" min="0" max= "100" value="0"></td>
-				<td>Quantity:<input class = "number" type="number" id ="angelfishCount" min="0" max= "100" value="0"></td>
+				<td>Quantity:<input class = "number" type="number" name = "pufferCount" id="pufferCount" min="0" max= "1000" value = "0"></td>
+				<td>Quantity:<input class = "number" type="number" name = "goldfishCount" id ="goldfishCount" min="0" max= "1000" value="0"></td>
+				<td>Quantity:<input class = "number" type="number" name = "angelfishCount" id ="angelfishCount" min="0" max= "1000" value="0"></td>
 			</tr>
 		</table><br>
 		<h3>Shipping:</h3>
 		<p><input type="radio" name="shipping" value="0"> Free 7 day</p>
 		<p><input type="radio" name="shipping" value="50"> $50 overnight</p>
 		<p><input type="radio" name="shipping" value="5"> $5 3 day</p>
-		<p>Enter a username: <input type="text" id="user"></p>
-		<p>Enter a password: <input type ="password" id="pass"></p>
+		<p>Enter a username: <input type="text" name = "user" id="user" value=""></p>
+		<p>Enter a password: <input type ="password" name="pass" id="pass" value=""></p>
 		<p><button type ="button" onclick="onClick()">Reset</button> <input type="submit"> </p>
 		</form>
 	</body>
